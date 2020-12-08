@@ -1,0 +1,99 @@
+<h1>cadastro</h1>
+<form action="/controller/" method="POST">
+      
+    <div class="preencher">
+        <div id="pessoa">
+            <h3>Dados Pessoais</h3>
+            <div class="tipo">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipoPessoa" id="pf" value="F" required>
+                    <label class="form-check-label" for="tipoPessoa">
+                        Pessoa Fisica
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipoPessoa" id="pj" value="J" required>
+                    <label class="form-check-label" for="tipoPessoa">
+                        Pessoa juridica
+                    </label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="nome" class="form-label">nome<font style="color:red">*</font></label>
+                <input type="text" class="form-control " id="nome" name="nome" required>
+            </div>
+            <div class="mb-3">
+                <label for="sobrenome" class="form-label">sobrenome<font style="color:red">*</font></label>
+                <input type="text" class="form-control " id="sobrenome" name="sobrenome" required>
+            </div>
+            <div class="mb-3">
+                <label for="sexo" class="form-label">Sexo<font style="color:red">*</font></label>
+                <select class="form-select" id="sexo" name="sexo"  required>
+                    
+                    <option value="F">Feminino</option>
+                    <option value="M">Masculino</option>    
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="cpf" class="form-label">Cpf<font style="color:red">*</font></label>
+                <input type="text" class="form-control" name="cpf" id="cpf" required>
+            </div>
+            <div class="mb-3">
+                <label for="fone"  class="form-label">Telefone<font style="color:red">*</font></label>
+                <input type="text" class="form-control" name="fone" id="fone" required>
+            </div>
+            <div class="mb-3">
+                <label for="cel" class="form-label">Celular</label>
+                <input type="text" class="form-control " name="cel" id="cel">
+            </div>  
+            <div class="mb-3">
+                <label for="nasc" class="form-label">Data de Nascimento<font style="color:red">*</font></label>
+                <input type="date"  class="form-control" name="nasc" id="nasc" required>
+            </div>  
+            
+            
+        </div>
+        <div id="endereco">
+            <h3>Endereço</h3>
+
+            <div class="mb-3">
+                <label for="cep" class="form-label">Cep</label>
+                <input type="text" class="form-control" name="cep"  id="cep">
+            </div>
+            <div class="mb-3">
+                <label for="rua" class="form-label">Rua</label>
+                <input type="text" class="form-control " name = "rua" id="rua">
+            </div>
+            <div class="mb-3">
+                <label for="num" class="form-label">Número</label>
+                <input type="text" class="form-control " name ="num" id="num">
+            </div>
+            <div class="mb-3">
+                <label for="compl" class="form-label">Comlemento</label>
+                <input type="text" class="form-control " name="compl" id="compl">
+            </div>
+            <div class="mb-3">
+                <label for="ref" class="form-label">Referencia</label>
+                <input type="text" class="form-control" name="ref" id="ref">
+            </div>
+            <div class="mb-3">
+                <label for="bairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" name ="bairro"  id="bairro">
+            </div>
+            <div class="mb-3">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" name ="cidade"  id="cidade">
+            </div>
+            <div class="mb-1">
+                <label for="estado" class="form-label">Estado</label>
+                <input type="text" class="form-control " name="estado" id="estado">
+            </div>
+        </div>
+    </div>
+    <input type="hidden" name="sequence" value="inserir">
+    <input type="hidden" name="id" value="">
+    <input type="hidden" name="id_endereco" value="">
+
+    <button type="submit" class="btn btn-success">Enviar</button>
+
+</form>

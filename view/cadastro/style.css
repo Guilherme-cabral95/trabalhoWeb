@@ -1,0 +1,34 @@
+h1{
+    color: aquamarine;
+}
+
+
+.preencher .tipo{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+
+form .preencher{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#pessoa{
+    width: 45%;    
+
+}
+
+#endereco{
+    width: 45%;    
+}
+
+.preencher #sexo{
+    width: 150px;
+}
+
+.preencher #estado{
+    width: 150px;
+}
